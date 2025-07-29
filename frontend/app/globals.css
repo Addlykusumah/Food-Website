@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px); /* Atur ketinggian sesuai kebutuhan */
+    }
+}
+
+.bg-login {
+    background-image: url('../public//image/BgLogin.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+.spin {
+    animation: spin 400s linear infinite, upDown 3s ease-in-out infinite;
+}
