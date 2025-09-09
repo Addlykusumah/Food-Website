@@ -24,7 +24,7 @@ const fs_1 = __importDefault(require("fs"));
 
 const prisma = new client_1.PrismaClient({ errorFormat: "pretty" });
 
-/** GET ALL MENUS (with filter search & category) */
+/** GET ALL MENUS (with filter search & categori) */
 const getAllMenus = (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { search, category } = request.query;
